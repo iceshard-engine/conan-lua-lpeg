@@ -63,4 +63,4 @@ class LuaLpegConan(ConanFile):
         if self.settings.os == "Windows":
             self.env_info.LUA_CPATH.append(os.path.join(self.package_folder, "bin/Release/?.dll"))
         if self.settings.os == "Linux":
-            self.env_info.LUA_CPATH.append(os.path.join(self.package_folder, "bin/Release/?.so"))
+            self.env_info.LUA_CPATH.append(os.path.join(self.package_folder, "lib/Release/lib?.so"))
